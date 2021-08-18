@@ -1,0 +1,13 @@
+{
+  "name": "Manusis Shortcuts Extension",
+  "version": "1.0",
+  "description": "Manusis shortcuts extension",
+  "manifest_version": 2,
+
+  "permissions": ["tabs", "http://*/*"],
+
+  "content_scripts": [{
+    "matches": ["https://*.manusis4.com/*"],
+    "js": ["main.js"]
+  }]
+}
